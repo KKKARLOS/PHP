@@ -1,0 +1,111 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+Barebare
+--------
+banner principal
+anchura max: 1660
+altura:465px
+
+Restaurante
+-----------
+banner principal
+anchura max: 1660
+altura:520px
+
+Barra y raciones
+-----------------
+banner principal
+anchura max: 1660
+altura:520px
+
+Bodega
+---------------
+banner principal
+anchura max: 1660
+altura:520px
+
+Menus y eventos
+-----------------
+banner principal
+anchura max: 1660
+altura:520px
+
+Reservas
+---------------
+banner principal
+anchura max: 1660
+altura:520px
+
+
+Header
+
+MENU-NAVEGACION
+
+height : 40px;
+font-family:Montserrat
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+background-color: rgb(51, 51, 51)
+
+TITULO-Cabecera
+
+height : 140px;
+	 .jumbotron h1{
+		font-family: 'lucida_calligraphyitalic'; //Simillar  Gaze Bold font
+		}
+
+MENU PIE
+
+height : 110px;
+
+Cabecera debajo del banner
+
+.cabh2{
+    color:#26537D;
+    font-size: 32px;
+    letter-spacing: 6px;
+    font-family: 'Playfair Display', serif;
+}
+
+Poner foto - texto de un tamaño 560 width por 485 height
+
+
+https://fontawesome.com/kits/3b6ee8ccaf/use?welcome=yes
+
+https://azurmendi.restaurant/
+https://www.gorkaizagirre.com/visitas-y-catas/
+
+https://www.soyunamarca.com/12-disenos-web-de-paginas-de-restaurantes/#Mugaritz
+
+http://lopezdezubiria.com/
+
+https://www.thepapermill-lasswade.co.uk/
+
+https://blog.aulaformativa.com/ejemplos-de-sitios-web-de-restaurantes/
+
+https://webdesignledger.com/restaurant-websites-to-inspire-you/
+
+https://www.winestyletravel.com/articulo-blog/restaurantes-comer-lujo-pais-vasco/
+
+
+/metido efecto en el proyecto BSS de la behobia - ss  
+#top-menu li a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 5px;
+    transition: background-size .3s;
+    font-size:1em;
+    font-family: roboto;
+}
+
+#top-menu li a:hover, #top-menu li a:focus {
+    background-size: 100% 3px;
+}

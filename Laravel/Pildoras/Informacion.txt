@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+Homestead es donde tenemos la máquina virtual para levantar laravel
+
+F:\Cursos\Laravel\Pildoras\Homestead
+
+
+Los proyectos de Laravel los tenemos en code
+
+C:\Users\Karlos\code

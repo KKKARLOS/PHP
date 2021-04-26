@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "b24a0bc0-045c-419d-a76c-399433ebc12e",
+		"name": "Contactos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insertar contactos por POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "funcion",
+							"value": "insertar",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Asier",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/php/sw_contactos/sw_personas.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"sw_contactos",
+						"sw_personas.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Contactos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "funcion",
+							"value": "getAll",
+							"type": "text"
+						},
+						{
+							"key": "ID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/php/sw_contactos/sw_personas.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"sw_contactos",
+						"sw_personas.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

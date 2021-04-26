@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body>
+    <header class="w100 flexRow">
+     <!-- Menu-->
+        <nav class="menu"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li ><a href="#">Restaurante</a></li>
+                <li><a href="barra.html">Barra</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>        
+       </nav>       
+        <!-- Redes Sociales-->
+       <div class="redes-sociales">
+            <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+            <i class="fab fa-instagram fa-1x"></i>&nbsp;
+            <i class="fab fa-twitter fa-1x"></i>&nbsp;
+           <i class="far fa-comments fa-1x"></i>&nbsp;
+       </div>
+    </header>
+     <!-- Banner principal de la página-->
+    <section class="banner restaurante">
+        <div class="txtban txtBanner">   
+        Restaurante
+        </div>     
+    </section>
+     <!-- Texto al pie del banner-->
+    <section class="w87-5 mb50 ">
+        <p>
+            En el Bare-Bare rendimos culto al producto. Solo adquirimos materia prima de primera calidad. La estrecha relación con nuestros colaboradores en los diferentes mercados y lonjas nos garantiza la mejor selección de mariscos y pescados cada día, ofreciendo a nuestros clientes un producto fresco y natural en las mejores condiciones.
+        </p>      
+    </section>
+     <!-- Cabecera de Servicios-->
+
+    <section  class="w87-5 flexRow mt90">
+        <article class="raya2">
+            <hr>
+        </article>
+        <article>
+            <h1>NUESTRA CARTA&nbsp&nbsp&nbsp&nbsp<i class="fas fa-utensils"></i></h1>
+        </article>
+        <article class="raya2">
+            <hr>
+        </article>    
+    </section> 
+     <!--  3 Imagenes de Restaurante
+    <section class="w87-5 s-3-images flexRow">
+        <article class="cw-30">
+             <img src="imagenes/restaurante/imagen1.png" title="">
+        </article>
+        <article class="cw-30">
+             <img src="imagenes/restaurante/imagen2.png" title="">
+        </article>
+        <article class="cw-30">
+             <img src="imagenes/restaurante/imagen3.png" title="">
+        </article>        
+    </section>-->
+ <!--  4 Imagenes Carta menu-->
+    <section class="w87-5 mt90 s-4-images flexRow">
+        <article class="cw-25" onclick="location.href='#entrantes';">
+              <img  loading="lazy" src="imagenes/restaurante/entrantes.png" title="holaa">
+              <div class="carta">Entrantes</div>
+        </article>
+        <article class="cw-25" onclick="location.href='#carnes';">
+             <img  loading="lazy" src="imagenes/restaurante/carnes.png" title="">
+             <div class="carta">Carnes</div>
+        </article>
+        <article class="cw-25"  onclick="location.href='#pescados';">
+             <img  loading="lazy" src="imagenes/restaurante/pescados.png" title="">
+             <div class="carta">Pescados</div>
+        </article>        
+        <article class="cw-25"  onclick="location.href='#postres';">
+             <img  loading="lazy" src="imagenes/restaurante/postre.png" title="">
+            <div class="carta">Postres</div>
+        </article>          
+    </section>    
+
+    <section id="entrantes" class="w87-5 mt90 flexRow">
+      <!-- Entrantes-->    
+        <article class="c-50 fondoCard">
+            <div class="txtCardMenu titularCardMenu">
+                Entrantes
+                 <hr>
+            </div>
+            <div class="bodyCardMenu flexRowNoWrap">
+                <div class="txtLinea">
+                     <p>.  Terrina de foie-gras con salsa  de manzana</p>
+                     <p>.  Ensalada de pollo de caserío en escabeche</p>
+                     <p>.  Sopa de pescado y marisco</p>
+                     <p>.  Pochas con almejas</p>
+                     <p>.  Pulpo a la gallega</p>
+                     <p>.  Jamón ibérico </p>
+                     <p>.  Alcachofas con almejas</p>
+                     <p>.  Foie de oca</p>
+                     <p>.  Antxoas del cantabrico en salazón</p>
+                </div>    
+                <div class="importeLinea">
+                    <p>19.70€</p>
+                    <p>13.70€</p>
+                    <p>13.50€</p>
+                    <p>15.40€</p>
+                    <p>19.80€</p>
+                    <p>24.20€</p>    
+                    <p>24,20€</p>      
+                    <p>19.50€</p>   
+                    <p>17.60€</p>              
+                </div>  
+            </div>    
+        </article>
+        
+        <article id="bg-entrantes1" class="lazy">        
+        </article>      
+        <article id="bg-entrantes2" class="lazy">        
+        </article>   
+    </section>
+   
+    <!-- Carnes-->  
+    <section  id="carnes" class="w87-5 mt90 flexRow">  
+        <article id="bg-carne1" class="lazy">        
+        </article>      
+        <article id="bg-carne2" class="lazy">        
+        </article>   
+
+        <article class="c-50 fondoCard">
+            <div class="txtCardMenu titularCardMenu">
+               Carnes
+                 <hr>
+            </div>
+            <div class="bodyCardMenu flexRowNoWrap">
+                <div class="txtLinea">
+                     <p>. Chuleta de viejo</p>
+                     <p>. Solomillo</p>
+                     <p>. Chuletillas de cordero</p>
+                     <p>. Chuletillas de cordero con bechamel</p>
+                     <p>. Carrilleras de ibérico</p>
+                     <p>. Cochinillo en su jugo y puré patata</p>
+                     <p>. Pichón asado con emulsión de frutos rojos</p>
+                     <p>. Foie de oca</p>
+                     <p>. Cabritillo asado al sarmiento</p>
+                </div>    
+                <div class="importeLinea">
+                    <p>44.00€</p>
+                    <p>22.00€</p>
+                    <p>18.50€</p>
+                    <p>22.00€</p>
+                    <p>18,70€</p>
+                    <p>23.10€</p>    
+                    <p>23,70€</p>      
+                    <p>25.50€</p>   
+                    <p>19.60€</p>              
+                </div>  
+            </div>    
+        </article>   
+   </section>
+  
+    <!-- Pescados-->  
+    <section  id="pescados" class="w87-5 mt90 flexRow">   
+
+         <article class="c-50 fondoCard">
+            <div class="txtCardMenu titularCardMenu">
+               Pescados
+                 <hr>
+            </div>
+            <div class="bodyCardMenu flexRowNoWrap">
+                <div class="txtLinea">
+                     <p>.  Lomo de merluza con espárragos y pesto</p>
+                     <p>.  Bacalao al pil-pil con sus kokotxas</p>
+                     <p>.  Besugo</p>
+                     <p>.  Lenguado a la parrilla (2pers)</p>
+                     <p>.  Rodaballo (2 pers)</p>
+                     <p>.  Rape (2 pers)</p>
+                     <p>.  Merluza con kokotxas</p>
+                     <p>.  Cogote de Merluza</p>
+                    <p> .  Txipiron plancha</p>
+                </div>    
+                <div class="importeLinea">
+                    <p>30.00€</p>
+                    <p>20.00€</p>
+                    <p>S.P.M</p>
+                    <p>63.80€</p>
+                    <p>61.60€</p>
+                    <p>55.00€</p>    
+                    <p>28.70€</p>      
+                    <p>22.70€</p>   
+                    <p>22,00€</p>              
+                </div>  
+            </div>    
+        </article> 
+
+        <article id="bg-pescado1" class="lazy">        
+        </article>      
+        <article id="bg-pescado2" class="lazy">        
+        </article>              
+   </section>
+  
+    <!-- Postres-->  
+    <section  id="postres" class="w87-5 mt90 flexRow">  
+        <article id="bg-postre1" class="lazy">        
+        </article>      
+        <article id="bg-postre2" class="lazy">        
+        </article>    
+            
+        <article class="c-50 fondoCard">
+            <div class="txtCardMenu titularCardMenu">
+               Postres
+                 <hr>
+            </div>
+            <div class="bodyCardMenu flexRowNoWrap">
+                <div class="txtLinea">
+                     <p>.  Sorbete de limón al txakolí</p>
+                     <p>.  Tarta de chocolate con natillas</p>
+                     <p>.  Tiramisú con espuma de café</p>
+                     <p>.  Tejas y cigarrillos</p>
+                     <p>.  Sorbete al cava (de limón o mandarina)</p>
+                     <p>.  Escoces / Irlandés</p>
+                     <p>.  Torrija</p>
+                     <p>.  Canutillos rellenos de crema y chocolate</p>
+                     <p>.  Leche frita</p>
+                     <p>.  Pantxineta</p>
+                </div>    
+                <div class="importeLinea">
+                    <p>8.30€</p>
+                    <p>8.30€</p>
+                    <p>8.80€</p>
+                    <p>6.60€</p>
+                    <p>7.15€</p>
+                    <p>8.25€</p>    
+                    <p>7.70€</p>      
+                    <p>9.90€</p>   
+                    <p>7.15€</p>    
+                    <p>8.00€</p>           
+                </div>  
+            </div>    
+        </article>  
+    </section>  
+        
+    <!-- Pie de página-->   
+        <footer class="mt90">
+            <div class="w87-5 flexRow">
+                <article class="col-5-texto">
+                    <ul>
+                        <li><a href="index.html">Inicio</li>
+                        <li><a href="restaurante.html">Restaurante</a>
+                        <li><a href="barra.html">Barra</a></li>
+                    </ul>
+                </article>
+                <article class="col-5-texto">
+                    <ul>
+                        <li><a href="bodega.html">Bodega</a></li>
+                        <li><a href="eventos.html"> Eventos</a></li>
+                         <li><a href="reservas.html">Reservas</a></li>
+                    </ul>                       
+                </article>
+                <article class="col-5-texto">
+                    <p>Aviso legal</p>
+                    <p>Pol. cookies y Privacidad</p>
+                    <p>© Bare-Bare 2018</p>
+                </article>          
+                <article class="col-5-texto p-25">
+                    <p>Siguenos en Facebook</p>
+                    <p>Portu Kalea, 7</p>
+                    <p>20003 Donostia, Gipuzkoa </p>
+                </article>          
+                <article class="col-5-texto p-50">
+                    <p>Horario 10:30 - 24:00H</p>
+                    <p>Jueves cerrado</p>
+                    <p>+34 943 420 703 </p>
+                </article>                                                
+            </div>
+        </footer>
+        <!--  Carga de imagenes de background utilizadas en css de forma diferida  -->
+		<script src="js/lazyLoading.js"></script> 
+</body>
+</html>

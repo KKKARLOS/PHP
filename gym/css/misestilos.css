@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+/*
+LOGO: font-family: 'Kaushan Script', cursive;
+TXT: font-family: 'Montserrat', sans-serif;
+TITLE: font-family: 'Cinzel', serif;*/
+
+
+*{
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+body, html{
+		height: 100%;
+		width: 100%;
+	}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	
+}
+#body2{
+	background:url(../imagenes/foto-slider02.jpg) no-repeat fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#cabecera1{
+	height: 100%;	
+}
+#cabecera2{
+	height: 50%;
+}
+#logo{
+	color: lightcoral;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 60px;
+	margin-left: 2%;
+	text-align: left;
+}
+h1{
+	font-family: 'Cinzel', serif;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.foto-fondo{
+	background: url(../imagenes/foto-slider02.jpg) fixed no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+#flecha{
+			position: fixed;
+			/*display: none;*/
+			bottom: 50px;
+			right: 50px;
+			opacity: 0;
+			width: 60px;
+			height: 60px;
+			transition: opacity 3s;
+		}
+/*MENU VIP*/
+.menu_bar{
+			display: none;
+		}
+		#topnav nav{
+			width: 100%;
+			z-index: 999; /*para que quede encima del contenido*/
+			/*background-color: darkgrey;*/
+			
+		}
+		
+		#topnav ul{
+			list-style-type: none;		
+		}
+		
+		#topnav ul li{ /*aqui no hay que poner ancho*/
+			display: inline-block; /*si no pongo esto aqui y le doy float left a la a, se desmonta todo*/
+			position: relative; /*padre menu desplegable, que tendra hijo-submenu*/
+		}
+		
+		#topnav ul li:hover{
+			background-color: rgba(240,128,128,0.30);
+		}
+
+		#topnav ul li a{
+			width: 200px; /*Ancho del botón: si todo suma menos de 640px es ok. Si hay más botones reducir tamaño botón o hacer entrar antes la hamburguesa OJO el% no coje.*/
+			color: lightcoral;
+			display: block;
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif;
+			padding: 10px;
+			text-align: center;
+					
+		}
+		/*pareja ocucltar mostrar*/
+		#topnav ul li:hover .children{
+			display: block;		/*Importante! mostrar submenu vertical*/
+		}
+		#topnav ul li .children{
+			display: none; /*ocultar menu desplegable*/
+			background-color: rgba(255,255,255,1.00); /*color de fondo desplegable*/ 
+			position: absolute; /*IMPORTANTE hijo*/
+			width: 100%; /*tamaño boton del hijo desplegable*/
+			z-index: 1000;
+			
+			
+		}
+		/*fin pareja ocucltar mostrar*/
+		
+		#topnav ul li .children li{
+			display: block;
+			overflow: hidden;
+			padding: 5px 0px;
+			border-bottom: 1px solid lightcoral;
+		}
+		
+		#topnav ul li .children li a{
+			display: block; /* esto no se tiene por que poner, pero a veces pasa que se desconfigura y entonces hay que ponerlo para sujetar. es porsi*/
+		}
+		
+	.navincial{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background-color: rgba(255,255,255,1.00);
+		}
+	.navpeque{
+			z-index: 999;
+			background-color: rgba(255,255,255,1.00);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+	#topnav ul{
+			list-style-type: none;
+			text-align: center;
+		}
+		
+	#topnav ul li{
+		display: inline-block;
+	}
+
+	#topnav ul li a{
+		color: lightcoral;
+		padding: 5px 7px;
+		display: block;
+		text-decoration: none;
+		font-family: 'Montserrat', sans-serif;
+		width: 150px;
+	}
+	#main_nav{
+			width: 100%;
+			margin: auto;
+		}
+
+nav{margin-top: 0px;}
+	/*FIN MENU*/
+/*SECCIONES ANIMADAS*/
+section{
+	background-color: white;
+	overflow: auto;
+}
+.animation-container{
+		padding: 140px 0px 40px 0px;
+		overflow: hidden;	
+	}
+
+
+
+#actividades{
+	background-color: #FFFFFF;
+	padding: 80px 0px;
+}
+
+
+#actividades #act-foto{
+		visibility: hidden;
+		width: 30%;
+		height: auto;
+		float: left;
+		margin-top: 75px;
+		margin-left: 50px;
+		z-index: 9;
+	}
+
+
+	#actividades .copy{
+		width: 60%;
+		float: right;
+		background-color: #FFFFFF;
+		padding: 50px;
+	}
+
+	#actividades p{
+		margin-bottom: 20px;
+		
+	}
+#servicios{
+	background-color: #FFFFFF;
+	padding: 80px 0px;
+}
+
+#servicios #serv-foto{
+		visibility: hidden;
+		width: 30%;
+		height: auto;
+		float: right;
+		margin-top: 75px;
+		margin-left: 50px;
+	}
+#servicios .copy{
+		width: 60%;
+		float: left;
+		background-color: #FFFFFF;
+		padding: 50px;
+		
+	}
+
+	#servicios p{
+		margin-bottom: 20px;
+		
+	}
+
+.enlaserv{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px 0px;
+	border: 1px solid lightcoral;
+	border-radius: 5px;
+	float: left;
+	width: 23%;
+	margin: 1%;
+	color: lightcoral;
+}
+
+.enlaserv2{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px 0px;
+	border: 1px solid lightcoral;
+	border-radius: 5px;
+	width: 30%;
+	margin: 5% 10%;
+	float: left;
+	color: lightcoral;
+}
+
+.enlaserv:hover, .enlaserv2:hover{
+	background-color: rgba(240,128,128,0.30);
+	color: lightcoral;
+}
+
+/*FOOTER*/
+footer{
+	background-color: white;
+	overflow: auto;
+	margin: 0px;
+	padding-bottom: 0px;
+	border-top: none;
+}
+.pie1{
+	width: 50%;
+	float: left;
+	background-color: black;
+	padding: 10% 15%;
+	color: lightcoral;
+	height: 100%;
+}
+.pie2{
+	width: 50%;
+	float: left;
+	padding:0px 5% 50px 5%;
+	
+}
+footer h2{
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+/*FIN FOOTER*/
+/*NOSOTROS*/
+
+#sect-instalaciones{
+	
+}
+.cont-foto-instal{
+	width: 25%;
+	float: left;
+	height: 250px;
+	overflow: hidden;
+}
+
+.text-foto-instal{
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+#frase-nos{
+	padding: 80px 25px;
+	text-align: center;
+	visibility: hidden;
+	
+}
+
+#chapa-nos{
+	
+	padding: 30px 60px 80px 60px;
+}
+#sect-instalaciones{
+	padding-bottom: 80px;
+}
+
+
+
+/*ACTIVIDADES*/
+.ui-widget{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	
+}
+.parte-acord{
+	height: auto;
+}
+#sect-actividades ul{
+	margin-left: 20px;
+}
+#ac-tit1, #ac-tit2, #ac-tit3, #ac-tit4{
+	cursor: pointer;
+	
+}
+
+#ac-tit1 img, #ac-tit2 img, #ac-tit3 img, #ac-tit4 img{
+	float: left;
+	margin-right: 10px;
+}
+#ac-txt1, #ac-txt2, #ac-txt3, #ac-txt4{
+	margin-left: 30px;
+	padding: 50px 5px;
+	
+}
+
+#especificaciones h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+#especificaciones ul, #especificaciones ol{
+	margin-left: 20px;
+}
+
+/*SERVICIOS*/
+#adel ul, #fisio ul{
+	margin-left: 20px;
+}
+#adel h2, #fisio h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+/*clases genericas*/
+
+.negrita{font-weight: bold;}
+.oculto{display: none;}
+.cursiva{font-style: italic;}
+
+
+/*xxxxxxxxxxxxxxx  TABLETA  xxxxxxxxxxxxxxxxxxxxxxx*/	
+		
+@media screen and (min-width:641px) and (max-width:1024px){
+	#topnav ul li a{
+		width: 120px;
+	}
+	
+/*SECCIONES*/
+	#servicios, #actividades{
+		padding: 20px;
+	}
+	
+	#actividades .copy{
+		width: 50%;
+		padding: 20px;
+	}
+	#actividades #act-foto{
+		width: 50%;
+		margin-top: 75px;
+		margin-left: 0px;
+	}
+	#servicios .copy{
+		width: 50%;
+		padding: 20px;
+	}
+	#servicios #serv-foto{
+		width: 50%;
+		margin-top: 100px;
+		margin-left: 0px;
+	}
+	
+/*FOOTER*/
+	.pie1{
+		padding: 25% 5%;
+	}
+	.pie2{
+		padding-bottom: 1%;
+	}
+	
+/*NOSOTROS*/
+	.cont-foto-instal{
+		width: 50%;
+		height: 200px;
+	}
+/*vibrofitness*/
+}
+/*xxxxxxxxxxxxxxx  MOVIL  xxxxxxxxxxxxxxxxxxxxxxx*/	
+		
+		@media screen and (max-width:640px){
+		/*menu*/
+			
+			.menu_bar{
+				display: block; 
+				width: 100%;
+				margin-bottom: 25px;
+				/*background-color: red;*/
+			}
+			.bt-menu{
+				padding:25px;
+				
+			}
+			#topnav{
+				width: 100%; /*ancho del menu*/
+				position: absolute; /*imprescindible para que funcione animation*/
+				left: -100%;
+				z-index: 999;
+			}
+			
+			#topnav ul li{
+				display: block; /*el opuesto de inline-block*/
+				border-bottom: 1px solid rgba(255,255,255,1.00);
+			}
+			
+			#topnav ul li a{
+				display: block; /*no obligatorio pero como antes*/		
+				width: 100%; /*para que se centre en el boton con el movil*/
+				
+			}
+			
+			#topnav ul li:hover .children{
+				display: none; /*ocultar submenu - porque no quiero que lo haga con el hover cuando aparezca con la animación*/
+			}
+			
+			#topnav ul li .children{
+				width: 100%; /*cuando el nav entre sera 100%*/
+				position: relative;
+			}
+			#topnav ul li .children li a{
+				margin-left: 20px; /*esto tabula las a para que no estén al mismo nivel del menu ppal.*/
+			}
+	/*fin menu*/
+			#cabecera1{
+				height: 50%;
+			}
+			#logo{
+				font-size: 40px;
+			}
+			#servicios, #actividades{
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			#servicios .copy, #actividades .copy, #servicios #serv-foto,#actividades #act-foto{
+				width: 100%;
+				float: none;
+				margin: 0px;
+			}
+			.enlaserv{
+				width: 40%;
+			}
+			.enlaserv2{
+				width: 40%;
+				margin: 1%
+			}
+			.pie1{
+				width: 100%;
+				float: none;
+				padding: 50px 20px;
+				text-align: center;
+			}
+			.pie2{
+				width: 100%;
+				float: none;
+				padding-bottom: 25px;
+			}
+			/*NOSOTROS*/
+	.cont-foto-instal{
+		width: 100%;
+		height: auto;
+	}
+		}

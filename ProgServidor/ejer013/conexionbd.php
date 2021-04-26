@@ -1,0 +1,11 @@
+<?php
+//LOCAL:
+$conexion=mysqli_connect("localhost","root","");
+mysqli_set_charset($conexion,'utf8');
+mysqli_select_db($conexion,"juegocalavera2");
+/*
+$conexion=mysqli_connect("mysql.bymhost.com","bd_cebanc","bdCebanc2019");
+mysqli_set_charset($conexion,'utf8');
+mysqli_select_db($conexion,"bd_juegocal");
+*/
+?>

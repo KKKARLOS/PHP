@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+     <link rel="stylesheet" href="estilos/tabs.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body>
+    <header class="w100 flexRow">
+     <!-- Menu-->
+        <nav class="menu"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li ><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="barra.html">Barra</a></li>
+                <li><a href="#">Bodega</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>        
+       </nav>       
+        <!-- Redes Sociales-->
+       <div class="redes-sociales">
+            <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+            <i class="fab fa-instagram fa-1x"></i>&nbsp;
+            <i class="fab fa-twitter fa-1x"></i>&nbsp;
+           <i class="far fa-comments fa-1x"></i>&nbsp;
+       </div>
+    </header>
+     <!-- Banner principal de la página-->
+    <section class="banner bodega">
+        <div class="txtban txtBanner">   
+        Bodega
+        </div>     
+    </section>
+     <!-- Texto al pie del banner-->
+    <section class="w87-5 mb50 ">
+        <p>
+            Sin un buen maridaje es muy difícil ofrecerte una experiencia gastronómica global para satisfacer todos tus sentidos. Bare-Bare ha confeccionado una carta de vinos en la que no faltan los grandes clásicos entre las nuevas revelaciones. Más de 100 referencias, en permanente actualización, para disfrutar de los secretos que nos ofrece el mundo gastronómico.
+        </p>      
+    </section>
+     <!--  3 Imagenes de Restaurante-->
+    <section class="w87-5 flexRow">
+        <article class="cw-20">
+             <img loading="lazy" src="imagenes/bodega/imagen1.png" title="">
+        </article>
+        <article class="cw-20">
+             <img loading="lazy" src="imagenes/bodega/imagen2.png" title="">
+        </article>
+        <article class="cw-20">
+             <img loading="lazy" src="imagenes/bodega/imagen3.png" title="">
+        </article>    
+        <article class="cw-20">
+             <img loading="lazy" src="imagenes/bodega/imagen4.png" title="">
+        </article>               
+    </section>
+     <!-- Cabecera de Servicios-->
+    <section class="w87-5 flexRow mt90">
+        <article class="raya">
+            <hr>
+        </article>
+        <article>
+            <h1>NUESTRA CARTA</h1>
+        </article>
+        <article class="raya">
+            <hr>
+        </article>    
+    </section>
+
+      <!-- Tintos -->    
+    <section class="w87-5 mt90 flexRow">
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Tintos
+            </div>
+            <div class="txtCard bodyCard">
+               Excelente equilibrio en boca, resultando amplios, sabrosos, frescos y con paso envolvente. Taninos finos y dulces perfectamente integrados con una gran riqueza aromática.
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb1').click();location.href='#carta_vinos';"><span>IR CARTA VINOS</span></button> 
+                </div>                
+            </div>    
+        </article> 
+        
+        <article id="bg-tintos1" class="lazy">        
+        </article>      
+        <article id="bg-tintos2" class="lazy">            
+        </article>   
+
+  
+    <!-- Blancos -->     
+
+        <article id="bg-blancos1" class="lazy">            
+        </article>      
+        <article id="bg-blancos2" class="lazy">            
+        </article>     
+      
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Blancos
+            </div>
+            <div class="txtCard bodyCard">
+               Varían desde el transparente al ámbar. Si las uvas con las que se elabora son jóvenes el vino será más claro. Con la maduración de la fruta o del propio vino en barricas la oxidación y el tiempo le dan una coloración que tiende al amarillo.
+El afrutamiento también varía con el tipo de uva seleccionada pero en general podemos encontrar toques de nueces, duraznos, frutas tropicales y cítricos.
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb2').click();location.href='#carta_vinos';"><span>IR CARTA VINOS</span></button> 
+                </div>                
+            </div>    
+        </article> 
+
+  
+    <!-- Txacolí-->  
+           <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Txacolí
+            </div>
+            <div class="txtCard bodyCard">
+               Vinos versátiles que sintonizan tanto con pescados como con carnes blancas, sabrosas salsas y delicados quesos. Untuosos, elegantes y complejos, con una capacidad de evolución excelente, pensado para disfrutar hoy y en el futuro.
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                    <button class="button" onclick="document.getElementById('tb3').click();location.href='#carta_vinos';"><span>IR CARTA VINOS</span></button> 
+                </div>                
+            </div>    
+        </article> 
+        
+        <article id="bg-txacoli1" class="lazy">           
+        </article>      
+        <article id="bg-txacoli2" class="lazy">             
+        </article>   
+  
+ 
+    <!-- Cava-->  
+ 
+        <article id="bg-cava1" class="lazy">            
+        </article>      
+        <article id="bg-cava2" class="lazy">            
+        </article>      
+        
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Cava
+            </div>
+            <div class="txtCard bodyCard">
+               El cava y el champagne son sinónimo de celebración, de compartir alegrías y  emociones, de brindar y de lujo. 
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb4').click();location.href='#carta_vinos';"><span>IR CARTA VINOS</span></button> 
+                </div>                
+            </div>    
+        </article> 
+
+ <!-- Champagne-->  
+           <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Champagne
+            </div>
+            <div class="txtCard bodyCard">
+               El vino espumoso armoniza bien prácticamente con casi todos los platos, disfrutaremos enormemente con aperitivos, mariscos, pescados, arroces y risottos e incluso con carnes blancas. 
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb5').click();location.href='#carta_vinos';"><span>IR CARTA VINOS</span></button> 
+                </div>                
+            </div>    
+        </article> 
+        
+        <article id="bg-champagne1" class="lazy">           
+        </article>      
+        <article id="bg-champagne2" class="lazy">              
+        </article>   
+
+   </section>
+   <!-- Cartas de vino-->   
+
+<section  id="carta_vinos" class="w87-5 flexRow mt90">
+    <article class="raya2">
+        <hr>
+    </article>
+    <article>
+        <h1>CARTA DE VINOS&nbsp&nbsp&nbsp&nbsp<i class="fas fa-wine-glass-alt"></i></h1>
+    </article>
+    <article class="raya2">
+        <hr>
+    </article>    
+</section>
+<section class="w87-5 mt90">
+        <div class="tab">
+            <button id="tb1" class="tablinks" onclick="openTab(event, 'Tintos')">Tintos</button>
+            <button id="tb2" class="tablinks" onclick="openTab(event, 'Blancos')">Blancos</button>
+            <button id="tb3" class="tablinks" onclick="openTab(event, 'Txacoli')">Txacolí</button>
+            <button id="tb4" class="tablinks" onclick="openTab(event, 'Cavas')">Cavas</button>
+            <button id="tb5" class="tablinks" onclick="openTab(event, 'Champagne')">Champagne</button>
+        </div>
+
+        <div id="Tintos" class="tabcontent">
+            <pre>
+<h2><bold>D.O. Ca Rioja Joven (Maceración Carbónica)</bold></h2><hr>
+                <h3><bold>R Punto 2012</bold></h3>
+                Bodega: Remirez de Ganuza
+                Varietal: Tempranillo, Graciano, Viura y Malvasía
+                Crianza: Sin Crianza
+
+<h2><bold>D.O. Ca Rioja Crianza</bold></h2><hr>
+                <h3><bold>Baigorri 1/2 litro</bold></h3>
+                Bodega: Baigorri
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica de Roble Francés y Americano
+               <h3><bold>Baigorri</bold></h3>
+                Bodega: Baigorri
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Baigorri Garage 2005</bold></h3>
+                Bodega: Baigorri
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica nuevas de Roble Francés
+                <h3><bold>Solar Viejo 3/8</bold></h3>
+                Bodega: Solar viejo
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Solar Viejo Selección</bold></h3>
+                Bodega: Solar viejo
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Marqués de Puerto</bold></h3>
+                Bodega: Marqués de Puerto
+                Varietales: Tempranillo y Mazuelo
+                Crianza: 12 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Marqués de Legarda</bold></h3>
+                Bodega:
+                Varietales: Tempranillo, Graciano y Mazuelo
+                Crianza: 12 meses en Barrica de Roble Americano
+                <h3><bold>Muga Crianza</bold></h3>
+                Bodega: Muga
+                Varietales: Tempranillo, Graciano, Garnacha y Mazuelo
+                Crianza: 30 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Muga Crianza ½ Botella</bold></h3>
+                Bodegas: Muga
+                Varietales: Tempranillo, Graciano, Garnacha y Mazuelo
+                Crianza: 30 meses en Barricas de Roble Francés y Americano
+                <h3><bold>Montecillo</bold></h3>
+                Bodegas: Montecillo
+                Varietal: 100% Tempranillo
+                Crianza: 12 meses en Barrica de Roble Americano
+
+<h2><bold>D.O. Ca Rioja Reserva</bold></h2><hr>
+                <h3><bold>Arnegui (Rioja de la Casa)</bold></h3>
+                Bodega: Pagos del Rey
+                Varietal: Tempranillo
+                Crianza: 12 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Sierra Cantabria</bold></h3>
+                Bodegas: Sierra Cantabria
+                Varietales: Tempranillo Garnacha
+                Crianza: 18 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Marques de Vargas</bold></h3>
+                Bodegas: Marques de Vargas
+                Varietales: Tempranillo Mazuelo, Garnacha negra
+                Crianza: 23 meses en Barrica de Roble Francés y Americano
+                <h3><bold>San Vicente</bold></h3>
+                Bodega: Sierra Cantabria
+                Varietales: Tempranillo
+                Crianza: 20 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Muga</bold></h3>
+                Bodegas: Muga
+                Varietales: Tempranillo, Graciano, Garnacha Tinta y Mazuelo
+                Crianza: 36 meses de Barrica de Roble Francés y Americano
+                <h3><bold>Viña Ardanza</bold></h3>
+                Bodega: Rioja Alta
+                Varietales: Tempranillo y Garnacha
+                Crianza: 36 meses en Barrica de Roble Americano
+                <h3><bold>Viña Ardanza ½ Botella</bold></h3>
+                Bodega: Rioja Alta
+                Varietales: Tempranillo y Garnacha
+                Crianza: 36 meses de Barrica de Roble Americano
+                <h3><bold>Trasnocho</bold></h3>
+                Bodega: Fernando Ramirez de Ganuza
+                Variedad: Tempranillo y Graciano
+                Crianza: 21 meses de Roble Francés
+                <h3><bold>Roda I</bold></h3>
+                Bodega: Roda
+                Varietal: Tempranillo
+                Crianza: 16 meses en Barrica de Roble Francés
+                <h3><bold>200 Monges</bold></h3>
+                Bodega: Vinicola Real
+                Varietales: Tempranillo, Graciano y Mazuelo
+                Crianza: 24 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Montecillo</bold></h3>
+                Bodega: Montecillo
+                Varietal: Tempranillo
+                Crianza: 18 meses en Barrica de Roble Francés
+
+<h2><bold>D.O.Bierzo</bold></h2><hr>
+                <h3><bold>Cuatro Pasos<bold></h3>
+                Bodega: Dominio de Tares
+                Varietal: Mencía
+                Crianza: 4 meses en Barrica
+                <h3><bold>Pétalos del Bierzo</bold></h3>
+                Bodega: Dominio de Tares
+                Varietal: Mencía
+                Crianza: 2 meses en Barrica
+                <h3><bold>Cepas Viejas</bold></h3>
+                Bodega: Dominio de Tares
+                Varietal: Mencía
+                Crianza: 9 meses en Barrica de Roble Francés Allier y Americano
+                <h3><bold>Pago Finca Elez</bold></h3>
+                Finca Elez Crianza 2006
+                Bodega: Manuel Manzaneque
+                Varietales: Cabernet Sauvignon, Tempranillo y Merlot
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Escena</bold></h3>
+                Bodega: Manuel Manzaneque
+                Varietales: Cabernet Sauvignon, Tempranillo y Merlot
+                Crianza: 12 meses en Barrica de Roble Francés
+
+<h2><bold>D.O. Priorato</bold></h2><hr>
+                <h3><bold>Martinet Bru</bold></h3>
+                Bodega: Mas Martinet Viticultors
+                Varietales: 30% Garnacha, 30% Merlot, 30% Cab. Sauvignon y 10%Syrah
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Les Terrases</bold></h3>
+                Bodega: Álvaro Palacios
+                Varietales: Cariñena, Garnacha, Cabernet. Sauvignon y Syrah
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Morlanda Priorat Crianza</bold></h3>
+                Viticultors del Priorat
+                Varietales: 60% Garnacha, 30 Cariñera y 10% Cab. Sauvignon
+                Crianza: 12 meses en Barrica de Roble Francés
+
+<h2><bold>D.O. Toro</bold></h2><hr>
+                <h3><bold>Prima (Bodegas Mauro)</bold></h3>
+                Bodega: Maurodos
+                Varietal: 100% Tinta de Toro
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Románico</bold></h3>
+                Bodega: Teso La Monja
+                Varietal: 100% Tinta de Toro
+                Crianza: 6 meses en Barrica de Roble Francés
+                <h3><bold>Almirez</bold></h3>
+                Bodega: Teso La Monja
+                Varietal: 100% Tinta de Toro
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Numanthia</bold></h3>
+                Bodega: Numanthia Ternes
+                Varietal: 100% Tinta de Toro
+                Crianza: 18 meses en Barrica de Roble Francés
+
+<h2><bold>D.O. Ribera del Duero Crianzas</bold></h2><hr>
+                <h3><bold>Condado de Oriza (Ribera de la Casa )</bold></h3>
+                Bodega: Pagos Del Rey
+                Varietal: Tempranillo
+                Crianza: 14 meses de Barrica de Roble Americano
+                <h3><bold>Bracamonte</bold></h3>
+                Bodega: Grupo Yllera
+                Varietal: Tempranillo
+                Crianza: 12 meses de Barrica de Roble Francés Allier y Americano
+                <h3><bold>Pago de Carraovejas</bold></h3>
+                Bodega: Pago de Carraovejas
+                Varietales: Tempranillo, Cabernet y Merlot
+                Crianza: 12 meses en Barrica de Roble Francés Allier y Americano
+                <h3><bold>Pesquera</bold></h3>
+                Bodegas: Alejandro Fernández
+                Varietal: Tempranillo
+                Crianza: 18 meses en Barrica de Roble Americano
+                <h3><bold>Torremilanos</bold></h3>
+                Bodega: Peñalba López
+                Varietal: Tempranillo
+                Crianza: 13 meses en Barrica de Roble Allier
+                <h3><bold>Hacienda Monasterio</bold></h3>
+                Bodega: Monasterio
+                Varietal: Tempranillo, Cabernet Sauvignon y Merlot
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Matarromera</bold></h3>
+                Bodega: Matarromera
+                Varietal: Tempranillo
+                Crianza: 12 meses en Barrica de Roble Americano
+                <h3><bold>Figuero</bold></h3>
+                Bodega: García Figuero
+                Varietal: Tempranillo
+                Crianza: 12 meses en Barrica de Roble Francés y Americano
+                <h3><bold>Montecastro</bold></h3>
+                Bodegas: Montecastro
+                Varietal: Tempranillo
+                Crianza: 12 meses de Barrica de Roble Francés y Americano
+                <h3><bold>Valtravieso</bold></h3>
+                Bodega: Bodegas y Viñedas Valtravieso
+                Varietales: Tempranillo, Cabernet Sauvignon y Merlot
+                Crianza: 12 meses en Barrica de Roble Francés
+                <h3><bold>Bracamonte Roble</bold></h3>
+                Bodega: Grupo Yllera
+                Varietal: Tempranillo
+                Crianza: 6 meses en Barrica de Roble Francés
+                <h3><bold>D.O. Ribera del Duero Reserva</bold></h3>
+                Pago de Carraovejas
+                Bodega: Pago de Carraovejas
+                Varietales: Tempranillo, Cabernet y Merlot
+                Crianza: 12 Meses en Barrica de Roble Francés y Americano
+                <h3><bold>Hacienda Monasterio</bold></h3>
+                Bodegas: Monasterio
+                Varietales: Tempranillo, Cabernet Sauvignon y Merlot
+                Crianza: 21 meses en Barrica de Roble Francés
+                <h3><bold>Alión</bold></h3>
+                Bodega: Bodegas y Viñedas Alión
+                Varietal: Tempranillo
+                Crianza: 14 meses en Barrica de Roble Francés
+                <h3><bold>409</bold></h3>
+                Bodega: Pagos del Rey
+                Varietales: Cabernet Sauvignon y Merlot
+                Crianza: 409 días en Barrica de Roble Francés Taransaud
+                <h3><bold>Vt de Valtravieso</bold></h3>
+                Bodega: Valtravieso
+                Varietales: Tempranillo y Cabernet Sauvignon
+                Crianza: 24 meses en Barrica de Roble Francés
+                <h3><bold>Vegasicilia Valbuena 5º Año</bold></h3>
+                Bodega: Vegasicilia
+                Varietal: Tempranillo
+                Crianza: 24 meses en Barrica de Roble Francés
+                <h3><bold>Flor de Pingus</bold></h3>
+                Bodega: Dominio de Pingus
+                Varietal: Tempranillo
+                Crianza
+                <h3><bold>Vegasicilia “ Unico”</bold></h3>
+                Bodega: Vegasicilia
+                Varietal: Tempranillo
+                Crianza: 72 meses en Barrica de Roble Francés
+            </pre>
+        </div>
+
+        <div id="Blancos" class="tabcontent">
+            <pre>
+<h2><bold>D.O. Rueda</bold></h2><hr>
+                <h3><bold>Analivia<bold></h3>        
+                Bodega: Pagos del Rey
+                Varietal: 100% Verdejo
+                <h3><bold>Valdubón<bold></h3>     
+                Bodega: Valdubón
+                Varietal: 100% Verdejo
+                <h3><bold>Finca La Colina Sauvignon Blanc<bold></h3>     
+                Bodega: Vinos Sanz
+                Varietal: 100% Sauvignon Blanc
+                <h3><bold>Blanco Nieva (Pie Franco)<bold></h3>     
+                Bodega: Viñedos nieva
+                Varietal: 100%Verdejo
+                <h3><bold>Finca La Colina<bold></h3>     
+                Bodega: Vinos Sanz
+                Varietal: 100% Verdejo
+                <h3><bold>José Pariente<bold></h3>     
+                Bodega: José Pariente
+                Varietal: 100%Verdejo
+
+<h2><bold>D.O. Rías Baíxas</bold></h2><hr>
+                <h3><bold>Valdamor<bold></h3>
+                Bodega: Valdamor
+                Varietal: 100% Albariño
+                <h3><bold>Martín Códax<bold></h3>
+                Bodega: Martín Códax
+                Varietal: 100% Albariño
+                <h3><bold>Martín Códax ½ Botella<bold></h3>
+                Bodega: Martín Códax
+                Varietal: 100% Albariño
+                <h3><bold>Vionta<bold></h3>
+                Bodega: Vionta
+                Varietal: 100% Albariño
+
+ <h2><bold>Sin D.O.</bold></h2><hr>
+                <h3><bold>Vin Doré 24K<bold></h3>               
+                Vino Blanco Espumoso con ribetes de oro de 24 Kilates
+            </pre>
+        </div>
+
+        <div id="Txacoli" class="tabcontent">
+            <pre>
+<h2><bold>D.O.GETARIAKO TXAKOLINAK</bold></h2><hr>
+            <h3><bold>Txakoli MARKO<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri
+            <h3><bold>Txakoli Ulacia.<bold></h3>            
+            Varietal: Hondarrabi Zuri 95% y Hondarrabi Beltza 5%
+            <h3><bold>Txacoli Elkano<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri
+            <h3><bold>Txakoli Olatu<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri
+            <h3><bold>Txakoli Urkizahar 9<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri
+            <h3><bold>Txakoli k5<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri
+            <h3><bold>Txakoli K Pilota<bold></h3>   
+            Varietal: 100% Hondarrabi Zuri 
+            <h3><bold>Txakoli Hiruzta<bold></h3> 
+            Varietal: 100% Hondarrabi Zuri 
+
+  <h2><bold>D.O. BIZKAIKO TXAKOLINAK</bold></h2><hr>
+            <h3><bold>Txakoli  Magalarte<bold></h3> 
+            Varietal: 100% Hondarrabi Zuri Zerratia 
+            <h3><bold>Txakoli  Aretxaga<bold></h3> 
+            Varietal: 100% Hondarrabi Zuri Zerratia  
+            <h3><bold>Txakoli  G22 Gorka Izaguirre<bold></h3> 
+            Varietal: 100% Hondarrabi Zuri Zerratia 
+            </pre>
+        </div>
+
+        <div id="Cavas" class="tabcontent">
+            <pre>
+                <h3><bold>Gala Brut Nature Reserva D.O. Cava<bold></h3> 
+                Bodegas Vallfarmosa | Macabeo, Xarel·lo, Parellada, Chardonnay
+
+                <h3><bold>Raimat Chardonnay Brut D.O. Cava<bold></h3> 
+                Bodegas Raimat | Chardonnay, Pinot Noir
+
+                <h3><bold>Anna Codorniu Blanc de Blancs D.O. Cava<bold></h3> 
+                Bodegas Codorniu | Chardonnay, Parellada, Xarel·lo, Macabeo
+
+                <h3><bold>Anna de Codorniu Rosé Brut D.O. Cava<bold></h3> 
+                Bodegas Codorniu | Chardonnay, Pinot Noir            
+            </pre>
+        </div>
+        <div id="Champagne" class="tabcontent">
+            <pre>
+                 <h3><bold>Pommery Brut Royal D.O Champagne<bold></h3> 
+                Bodegas Pommery | Pinot Noir, Pinot Meunier, Chardonnay
+
+                 <h3><bold>Veuve Clicquot Ponsardin<bold></h3> 
+                Veuve Clicquot | Chardonnay y Pinot Meunier
+
+                 <h3><bold>Moet & Chandon Brut Imperial<bold></h3> 
+                Moet & Chandon | Chardonnay, Pinot Meunier, Pinot Noir
+
+                 <h3><bold>Dom Perignon Vintage<bold></h3> 
+                Moët Chandon | Pinot Noir, Pinot Meunier, Chardonnay
+    
+            </pre>
+        </div>
+</section>
+
+    <!-- Pie de página-->   
+<footer class="mt90">
+    <div class="w87-5 flexRow">
+        <article class="col-5-texto">
+            <ul>
+                <li><a href="index.html">Inicio</li>
+                <li><a href="restaurante.html">Restaurante</a>
+                <li><a href="barra.html">Barra</a></li>
+            </ul>
+        </article>
+        <article class="col-5-texto">
+            <ul>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+            </ul>                       
+        </article>
+        <article class="col-5-texto">
+            <p>Aviso legal</p>
+            <p>Pol. cookies y Privacidad</p>
+            <p>© Bare-Bare 2018</p>
+        </article>          
+        <article class="col-5-texto p-25">
+            <p>Siguenos en Facebook</p>
+            <p>Portu Kalea, 7</p>
+            <p>20003 Donostia, Gipuzkoa </p>
+        </article>          
+        <article class="col-5-texto p-50">
+            <p>Horario 10:30 - 24:00H</p>
+            <p>Jueves cerrado</p>
+            <p>+34 943 420 703 </p>
+        </article>                                                
+    </div>
+</footer>
+    <!--  Carga de imagenes de background utilizadas en css de forma diferida  -->
+    <script src="js/lazyLoading.js"></script>    
+     <!--  Para las pestañas  -->
+    <script>
+        window.onload = function() {
+            document.getElementById('tb1').click();
+        };
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }      
+    </script>        
+</body>
+</html>

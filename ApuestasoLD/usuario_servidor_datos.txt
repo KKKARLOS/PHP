@@ -1,0 +1,10 @@
+﻿Contraseña: B*wLai-U
+
+Usuario:cebanc_jcper 
+Bdatos: ceb_jcper_apuestas
+
+email: apuestas@apuestas.jc.bymhost.com
+
+Servidor base datos: mysql.bymhost.com
+
+Descargar Filezila

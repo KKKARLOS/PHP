@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "0be00dca-a3c9-4083-81af-bfe08709f6d1",
+		"name": "precioproducto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Creación de usuario / signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "prueba",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "prueba@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "X-Requested-With",
+							"value": "XMLHttpRequest",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Visualización de usuario / user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcyNGIyZDlkNjQ5NDhmNjIyYTk5YjQxNTE1YzQwNDRlY2YwNGRlYzE5MmYxZjIyZTgxOWZjZWIyNGJhZWU0Nzk0ZmFjMzE0ODY2YjdlYmM2In0.eyJhdWQiOiIxIiwianRpIjoiNzI0YjJkOWQ2NDk0OGY2MjJhOTliNDE1MTVjNDA0NGVjZjA0ZGVjMTkyZjFmMjJlODE5ZmNlYjI0YmFlZTQ3OTRmYWMzMTQ4NjZiN2ViYzYiLCJpYXQiOjE1NTM4NzUwMjQsIm5iZiI6MTU1Mzg3NTAyNCwiZXhwIjoxNTg1NDk3NDI0LCJzdWIiOiIyMyIsInNjb3BlcyI6W119.IFFzPInH8cxaUTH-UPp39XMb7CDQdK4kdmSfNSwyncgdlfXbS-QCkiFtg8N1S9x6AsBAB5ct43Uwd52tziP8y-U3L_lkgOES31OrBizMQtuSRGafq8Ky49w4l1tcJggiayy5gmn2P-Ly31ZU9P4g93UqfitwWthbZStJO0Mi-ENLncRnS6ZIJkrc7F3u6rnnNI5iAxxoYcEc9LpqZVHWpVCCM7rzuuaYqAcVHbBKDACTaMz-SrB_VRrzJ_iz8UQi4VodCendDePBwMZ1Q6jHn3RMV3HqBQZc-RRyZc2MlpwbMHAS8HjBd6c9X1QFJ1mgW7IYhFITcoejH9ds0gJf9en7-s6pj5YPrtk5UiEIcIS82sDrvjw1VHOLlBcwjhXsB_0VfArVwPn87qow6IS8mx8KetR9_4sY98tEGoZNs7HN026th6HiXG_jK2ZLCNPykFaq-KQrhSEHS27x7MV6VBgfmeuKwYujmT5RvWlrA_nDTQHCizQLjqzadeVL2hL4MI0zqyERyY12-P1TfXrHYb5I3M-Xb0H61f2xGKYGK9ECqxhZwFEBJ1e-LKtQSS1Xbe_oh76kkdiIIP3uFBSWuKuIczECqO3fEL5_Yvl4WeRBNsFp42ED7wQm8c__KTtW5lGSLP35mYb8YOrgTaT8AfxiZ7A50kA289dgyKpS-C0"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ingreso de usuario / login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"prueba@example.com\",\n\t\"password\": \"123123\",\n\t\"remember_me\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cerrar sesión usuario / logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcyNGIyZDlkNjQ5NDhmNjIyYTk5YjQxNTE1YzQwNDRlY2YwNGRlYzE5MmYxZjIyZTgxOWZjZWIyNGJhZWU0Nzk0ZmFjMzE0ODY2YjdlYmM2In0.eyJhdWQiOiIxIiwianRpIjoiNzI0YjJkOWQ2NDk0OGY2MjJhOTliNDE1MTVjNDA0NGVjZjA0ZGVjMTkyZjFmMjJlODE5ZmNlYjI0YmFlZTQ3OTRmYWMzMTQ4NjZiN2ViYzYiLCJpYXQiOjE1NTM4NzUwMjQsIm5iZiI6MTU1Mzg3NTAyNCwiZXhwIjoxNTg1NDk3NDI0LCJzdWIiOiIyMyIsInNjb3BlcyI6W119.IFFzPInH8cxaUTH-UPp39XMb7CDQdK4kdmSfNSwyncgdlfXbS-QCkiFtg8N1S9x6AsBAB5ct43Uwd52tziP8y-U3L_lkgOES31OrBizMQtuSRGafq8Ky49w4l1tcJggiayy5gmn2P-Ly31ZU9P4g93UqfitwWthbZStJO0Mi-ENLncRnS6ZIJkrc7F3u6rnnNI5iAxxoYcEc9LpqZVHWpVCCM7rzuuaYqAcVHbBKDACTaMz-SrB_VRrzJ_iz8UQi4VodCendDePBwMZ1Q6jHn3RMV3HqBQZc-RRyZc2MlpwbMHAS8HjBd6c9X1QFJ1mgW7IYhFITcoejH9ds0gJf9en7-s6pj5YPrtk5UiEIcIS82sDrvjw1VHOLlBcwjhXsB_0VfArVwPn87qow6IS8mx8KetR9_4sY98tEGoZNs7HN026th6HiXG_jK2ZLCNPykFaq-KQrhSEHS27x7MV6VBgfmeuKwYujmT5RvWlrA_nDTQHCizQLjqzadeVL2hL4MI0zqyERyY12-P1TfXrHYb5I3M-Xb0H61f2xGKYGK9ECqxhZwFEBJ1e-LKtQSS1Xbe_oh76kkdiIIP3uFBSWuKuIczECqO3fEL5_Yvl4WeRBNsFp42ED7wQm8c__KTtW5lGSLP35mYb8YOrgTaT8AfxiZ7A50kA289dgyKpS-C0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Categorias",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIzOTBjMzZjZjcyYzQzZTc0Mzk0YjMwMjY3MzE5MmNlOGEzYTNkYjdkNGQ5YzcyMWJjNGRlOTUwMDA5MTU5MTk0NDExMGEwYjE1MzMzNjQxIn0.eyJhdWQiOiIxIiwianRpIjoiMjM5MGMzNmNmNzJjNDNlNzQzOTRiMzAyNjczMTkyY2U4YTNhM2RiN2Q0ZDljNzIxYmM0ZGU5NTAwMDkxNTkxOTQ0MTEwYTBiMTUzMzM2NDEiLCJpYXQiOjE1NTM4NzYyMjAsIm5iZiI6MTU1Mzg3NjIyMCwiZXhwIjoxNTg1NDk4NjIwLCJzdWIiOiIyMyIsInNjb3BlcyI6W119.IBCxURiGKWdO6VMk4R4XZkRGgh2dR1gPv-cWAm--1hpVB0YpZvHziINqRReL5NUhyEnWPs5Naa1S3NB6OV6YAGAYZ8VdzPzqEPvgwxE0eKANQgcrWqsHQJfl27JqQlWojx70GKA5KB_amIt7U9guQ96J4H2eKHnWuxWHE6vMrbMGne7vR7SppyBedIoOxq50xjGSnG8fONHTNDUkwMzXi2tRjQvkczyzA9-wwR3mM_Y9Cmqs4sf3XXF5QAa3ZWXBZOqsi8RuihuNVKoFruXkMAMWZ8kBr6jsyDccSrBaEbkYvjZgZRY5HQLb39Si6EUA_XWIIK00u_wsUQvsoIWKtBKGzIFxctuMgvQQ7wkp4fObJYCK1DpKFu_8gLP0O_E9_rT6Wj_mQCV8lxIWsg8jRKUwZ4Un8sN-VjVBdCQQZ1f4S9OxT6rXd3BS6ZvuPNZGAvRWpLPHJJ1Wrg-yECtz5F1klumeb8cCjj_FarZn1U0dBWE8SxFJb1obDRmCK1CC60CJe_29zKbL-TRiILJ7KqUdsrwz3ZvbaJxL5WJioqCSE2ooNOLj9SCEHiFjGZcEv0G47u0HhbRMKR9wNVnpEGG2yG1E02EoFAAxMLmy0dgP5J3AWUrWTnI7K_eQo8aVf5UhM_5tIKezfPhg5kZ_lZaGLrBoHa4fIuc92ICyX4I"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/precioproducto/public/categoria/foto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "_token",
+						"value": "aIUobTJqISJMs2R0YeLUbTMzW69t9gOO6PKyMxDu",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "inputFoto",
+							"value": null,
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/precioproducto/public/categoria/foto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"categoria",
+						"foto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login-Local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "asier@hotmail.es",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup-Loc al",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "asier",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asier@hotmail.es",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111111",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/moviles/public/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"moviles",
+						"public",
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar-Categorias",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "asier@hotmail.es",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/precioproducto/public/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"precioproducto",
+						"public",
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

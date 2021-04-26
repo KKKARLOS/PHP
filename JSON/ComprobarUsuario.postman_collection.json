@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "da8e75ee-065b-4a11-9a78-392aaa422525",
+		"name": "ComprobarUsuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "comprobarEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jc.perdiguerocarlos@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/php/registrar/sw_usuario_email.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"registrar",
+						"sw_usuario_email.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

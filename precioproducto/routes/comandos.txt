@@ -1,0 +1,104 @@
+//Para crear un proyecto en laravel
+
+composer create-project --prefer-dist laravel/laravel precioproducto
+
+//Para crear un controlador vacio
+
+php artisan make:controller SaludoController
+
+//Para crear un controlador con las funciones ( -r recursos)
+php artisan make:controller PokemonController -r
+
+//Para crear un modelo
+php artisan make:model Juego
+
+//Para ver las rutas
+php artisan route:list
+
+//A meter en todos los formularios para enviar
+@csrf
+
+//crear migraciones
+php artisan migrate
+
+// Crear migración con datos
+php artisan migrate --seed
+
+//echar para atras una migración
+php artisan migrate:rollback
+
+//crear la opción de autenticacion
+
+php artisan make:auth
+
+//crear la migración de una tabla
+
+php artisan make:migration create_categories_table
+
+//borrado de una vista cacheada
+php artisan view:cache
+
+//php borrado de la cache
+
+php artisan config:cache
+
+//php borrado de cache nás profundo y genera de nuevo los archivos de migracion(composer.js)
+
+composer dump-autoload
+
+// Borra todo, tablas , datos y las regenera todo
+
+php artisan migrate:refresh --seed
+
+//crear un modelo y la migración para las categorías(m) y el controlador(c) Las funciones en el controlador(r)
+
+php artisan make:model Category -mcr
+
+//crear la migración y meterle datos
+
+php artisan make:model Category --seed
+
+//crear seeds (datos para la categoria)
+
+php artisan make:seeder CategoriesSeeder
+
+//ejecutar el datatabase/seeds/DatabaseSeeder (run)
+
+php artisan db:seed
+
+//Cómo instalar Laravel Debugbar
+// Debemos ejecutar el siguiente comando dentro de nuestro proyecto.
+
+composer require barryvdh/laravel-debugbar --dev
+
+//roles y user Claudio Vallejo
+// https://medium.com/@cvallejo/autenticaci%C3%B3n-de-usuarios-y-roles-en-laravel-5-5-97ab59552d91
+
+//ApiRest Laravel
+//https://medium.com/@cvallejo/sistema-de-autenticaci%C3%B3n-api-rest-con-laravel-5-6-240be1f3fc7d
+
+//Eloquent
+//https://es.stackoverflow.com/questions/39380/eloquent-count-group-by-inner-join
+//
+
+//google charts
+//https://developers.google.com/chart/
+
+//imagenes
+//https://programacionymas.com/blog/subir-imagen-usando-ajax-y-laravel
+
+https://makitweb.com/make-bootstrap-modal-file-upload-preview-jquery-ajax/
+
+
+composer require intervention/image
+Modificar fichero php.ini en la carpeta
+C:\Program Files\IIS Express\PHP\v7.2
+
+extension=php_fileinfo.dll
+
+// Ventana de login con bootstrap
+// https://mdbootstrap.com/docs/jquery/modals/forms/
+
+//mapas
+https://itsolutionstuff.com/post/laravel-5-multiple-markers-in-google-map-using-gmapsjsexample.html
+//Plantillas bootstrap

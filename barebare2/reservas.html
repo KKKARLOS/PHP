@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body>
+    <header class="w100 flexRow">
+     <!-- Menu-->
+        <nav class="menu"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li ><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="barra.html">Barra</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                <li><a href="#">Reservas</a></li>
+            </ul>        
+       </nav>       
+        <!-- Redes Sociales-->
+       <div class="redes-sociales">
+            <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+            <i class="fab fa-instagram fa-1x"></i>&nbsp;
+            <i class="fab fa-twitter fa-1x"></i>&nbsp;
+           <i class="far fa-comments fa-1x"></i>&nbsp;
+       </div>
+    </header>
+     <!-- Banner principal de la página-->
+    <section class="banner reservas">
+        <div class="txtban txtbanReservas1 ">   
+        Reservas sólo por teléfono
+        </div>
+        <div class="txtban txtbanReservas2">   
+            <p><i class="fas fa-mobile-alt fa-1x"></i>&nbsp;&nbsp;+34 943 42 07 03</p>
+            <p><i class="fab fa-whatsapp fa-1x"></i>&nbsp;+34 699 35 49 30</p>
+        </div>     
+    </section>
+         <!-- Cabecera de Servicios-->
+    <section class="w87-5 flexRow mt90">
+        <article class="raya3">
+            <hr>
+        </article>
+        <article>
+            <h1>Estamos a tu disposición para lo que necesites</h1>
+        </article>
+        <article class="raya3">
+            <hr>
+        </article>    
+    </section>
+
+    <section class="w100 mt90 flexRow">
+        <article id="bg-reservas" class="lazy">   
+        </article>           
+        <!-- Contacto-->    
+        <article class="c-60 fondoCard">
+            <div class="txtCardRerservas">
+                <div class="imgTfno">
+                    <h3 class="negro"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;RESERVAS</h3>
+                </div>
+                <div class="txtTfno txtGen">En el teléfono 943 130 000.  <br/>
+                No atendemos reservas vía mail <br/>
+                sin antes haberlas formalizado<br/>
+                 telefónicamente.
+                 </div>
+                <div class="imgHorario">
+                    <h3 class="negro"><i class="far fa-clock"></i>&nbsp;&nbsp;&nbsp;HORARIO RESERVAS</h3>
+                </div>
+                <div class="txtHorario txtGen">De 08:00 a 14:30 horas y de 17:00 a 22:00 horas</div>
+                <div class="imgHorarioApertura">
+                    <h3 class="negro"><i class="fas fa-lock-open"></i>&nbsp;&nbsp;&nbsp;HORARIO DE COMEDOR</h3>
+                </div>
+                <div class="txtHorarioApertura txtGen">De 13:00 a 15:30 y de 20:30 a 23:00 horas</div>       
+                <div class="imgHorarioAnual">
+                    <h3 class="negro"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;CIERRES</h3>
+                </div>
+                <div class="txtHorarioAnual txtGen">• Enero a Junio / Octubre a Diciembre: cerrado <br/> 
+                el miércoles  todo el día y todas las noches<br/> 
+                excepto el viernes y sábado.<br/>
+                • Julio y Agosto: cerrado el domingo por la noche.<br/>
+                • Cierre anual: Navidad y todo el mes de enero.
+                </div>    
+                <div class="imgComedores">
+                    <h3 class="negro"><i class="fas fa-utensils"></i>&nbsp;&nbsp;&nbsp;COMEDORES</h3>
+                </div>                
+                <div class="txtComedores txtGen">Un comedor principal para unos 50 comensales<br/>
+                 y dos interiores, de estilo rústico, para unos 25<br/>
+                 comensales cada uno.
+                </div>                     
+            </div>
+        </article>
+    </section>
+    
+    <section class="w100 mt90">   
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.60574726848!2d-1.9831775639838238!3d43.322511963811664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4ba39c5e1faef5a!2sBare%20Bare%20.!5e0!3m2!1ses!2ses!4v1586280504560!5m2!1ses!2ses" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <section class="w87-5 flexRow mt90">
+        <article class="raya3">
+            <hr>
+        </article>
+        <article>
+            <h1>¿Quieres hacernos alguna pregunta?</h1>
+        </article>
+        <article class="raya3">
+            <hr>
+        </article>    
+    </section>
+   <section class="w100 mt90 flexRow">
+        <article id="bg-reservas" class="lazy">   
+        </article>           
+        <!-- Contacto-->    
+        <article class="c-60 fondoCard">
+			<div class="wrap">
+				<form action="correo/contacto.php" class="formulario" name="formulario_registro" method="post">
+						<div class="input-group">
+							<input type="text" id="nombre" name="nombre" required/>
+							<label class="label" for="nombre">Nombre</label>
+						</div>
+						<div class="input-group">
+							<input type="email" id="email" name="email" required/>
+							<label class="label" for="email">E-mail</label>
+						</div>
+						<div class="input-group">
+							<input type="text" id="telefono" name="telefono" />
+							<label class="label" for="telefono">Teléfono *</label>
+						</div>
+						<div class="input-group">
+							<textarea id="mensaje" name="mensaje" required></textarea>
+							<label class="label" for="mensaje">Mensaje</label>
+						</div>
+						<input type="submit" id="btn-submit" value="Enviar" />
+				</form>
+			</div>        
+        </article>    
+    </section>        
+    <!-- Pie de página-->   
+        <footer class="mt90">
+            <div class="w87-5 flexRow">
+                <article class="col-5-texto">
+                    <ul>
+                        <li><a href="index.html">Inicio</li>
+                        <li><a href="restaurante.html">Restaurante</a>
+                        <li><a href="barra.html">Barra</a></li>
+                    </ul>
+                </article>
+                <article class="col-5-texto">
+                    <ul>
+                        <li><a href="bodega.html">Bodega</a></li>
+                        <li><a href="eventos.html"> Eventos</a></li>
+                         <li><a href="reservas.html">Reservas</a></li>
+                    </ul>                       
+                </article>
+                <article class="col-5-texto">
+                    <p>Aviso legal</p>
+                    <p>Pol. cookies y Privacidad</p>
+                    <p>© Bare-Bare 2018</p>
+                </article>          
+                <article class="col-5-texto p-25">
+                    <p>Siguenos en Facebook</p>
+                    <p>Portu Kalea, 7</p>
+                    <p>20003 Donostia, Gipuzkoa </p>
+                </article>          
+                <article class="col-5-texto p-50">
+                    <p>Horario 10:30 - 24:00H</p>
+                    <p>Jueves cerrado</p>
+                    <p>+34 943 420 703 </p>
+                </article>                                                
+            </div>
+        </footer>
+        <!--  Carga de imagenes de background utilizadas en css de forma diferida  -->
+		<script src="js/lazyLoading.js"></script>  
+        <!--  Para el formulario de contacto  -->
+        <script src="js/formulario.js"></script>  
+</body>
+</html>

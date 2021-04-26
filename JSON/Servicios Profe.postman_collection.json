@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "ad121cbb-817e-4e67-b121-4a2616e50318",
+		"name": "Servicios Profe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnviarNotificacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAAjj-lQqU:APA91bHHJcIyyK8VnhY4XLhQHi9QJJfbYw7if3qQW-3InHSCEMWqZlf9Ebr3oxf-Dh4ZFaQqlgVh0AmyBbEur6IuMuJw2RBhokRoaKIrikiZFByJaioJzLWtIMcAZ_e3QjjL0Q6C2TaJ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"to\" : \"cf0YfS3L24s:APA91bG4AD3gzdsg1Yp4Cwo8kgHlvGE-kBU48vIZFxZYQKiZObCYMt9oZgBwgPkw87GOfR5DDYzVC8Lnh0w6YNFr6HibAoI7UbRzWjQd3QPEJpbdluBqAvoYkSlTUR_ofd1J8-vrw1ey\",\r\n \"notification\" : {\r\n \"body\" : \"great match!\",\r\n \"title\" : \"Portugal vs. Denmark\",\r\n \"content_available\" : true,\r\n \"priority\" : \"high\"\r\n },\r\n \"data\" : {\r\n \"body\" : \"great match!\",\r\n \"title\" : \"Portugal vs. Denmark\",\r\n \"content_available\" : true,\r\n \"priority\" : \"high\"\r\n } \r\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

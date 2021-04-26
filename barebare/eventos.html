@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/fonts.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/tabs.css">
+      <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto&display=swap" rel="stylesheet">-->
+   <script src="https://kit.fontawesome.com/3b6ee8ccaf.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+<body>
+    <header class="w100 flexRow">
+     <!-- Menu-->
+        <nav class="menu"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li ><a href="restaurante.html">Restaurante</a></li>
+                <li><a href="barra.html">Barra</a></li>
+                <li><a href="bodega.html">Bodega</a></li>
+                <li><a href="#"> Eventos</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>        
+       </nav>       
+        <!-- Redes Sociales-->
+       <div class="redes-sociales">
+            <i class="fab fa-facebook-f fa-1x"></i>&nbsp;
+            <i class="fab fa-instagram fa-1x"></i>&nbsp;
+            <i class="fab fa-twitter fa-1x"></i>&nbsp;
+           <i class="far fa-comments fa-1x"></i>&nbsp;
+       </div>
+    </header>
+     <!-- Banner principal de la página-->
+    <section class="banner eventos">
+        <div class="txtban txtBanner">   
+        Eventos
+        </div>     
+    </section>
+     <!-- Texto al pie del banner-->
+    <section class="w87-5 mb50 ">
+        <p>     
+Si quieres celebrar tu boda o cualquier otro evento contamos con los servicios y los medio adecuados para hacer que tu celebración sea única.
+        </p>      
+    </section>
+     <!--  3 Imagenes de eventos-->
+    <section class="w87-5 s-3-images flexRow">
+        <article class="cw-30">
+             <img  loading="lazy" src="imagenes/eventos/imagen1.png" title="">
+        </article>
+        <article class="cw-30">
+             <img  loading="lazy" src="imagenes/eventos/imagen2.png" title="">
+        </article>
+        <article class="cw-30">
+             <img  loading="lazy" src="imagenes/eventos/imagen3.png" title="">
+        </article>        
+    </section>
+     <!-- Cabecera de Servicios-->
+    <section class="w87-5 mt90 flexRow ">
+        <article class="raya">
+            <hr>
+        </article>
+        <article>
+            <h1>EVENTOS</h1>
+        </article>
+        <article class="raya">
+            <hr>
+        </article>    
+    </section>
+
+    <section class="w87-5 mt90 flexRow">
+      <!-- Bodas-->    
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Bodas
+            </div>
+            <div class="txtCard bodyCard">
+                Contamos con salón abierto con capacidad para 550 personas en formato banquete y una pista de baile con DJ.  Ofrecemos en cada boda un trato diferenciador, con detalles personalizados y adaptados a cada pareja.
+            </div>    
+            <div class="txtCard flexRowNoWrap pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button"  onclick="document.getElementById('tb1').click();location.href='#carta_menus';"><span>IR BODAS</span></button> 
+                </div>                
+            </div>    
+        </article>
+        
+        <article id="bg-bodas" class="lazy" onclick="document.getElementById('tb1').click();location.href='#carta_menus';">        
+        </article>      
+        <!-- Comuniones-->  
+        <article id="bg-comuniones" class="lazy" onclick="document.getElementById('tb2').click();location.href='#carta_menus';">        
+        </article>              
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Comuniones
+            </div>
+            <div class="txtCard bodyCard">
+               Cada solicitud será tratada de manera individual, os ofrecemos un trato diferenciador, con detalles personalizadospara conseguir eventos singulares.
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb2').click();location.href='#carta_menus';"><span>IR COMUNIONES</span></button> 
+                </div>                
+            </div>    
+        </article> 
+         <!-- Eventos Empresas-->    
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Eventos Empresas
+            </div>
+            <div class="txtCard bodyCard">
+                Os acompañaremos en el diseño de vuestro evento o si preferéis nos encargaremos de organizarlo en su totalidad. Supervisaremos cada detalle con especial cariño, profesionalidad y dedicación
+            </div>    
+            <div class="txtCard flexRowNoWrap pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb3').click();location.href='#carta_menus';"><span>IR EMPRESAS</span></button> 
+                </div>                
+            </div>    
+        </article>
+        <article id="bg-empresas" class="lazy" onclick="document.getElementById('tb3').click();location.href='#carta_menus';">        
+        </article>   
+
+        <!-- Fiesta Grupos-->        
+        <article id="bg-grupos" class="lazy" onclick="document.getElementById('tb4').click();location.href='#carta_menus';">        
+        </article>   
+        
+        <article class="c-50 fondoCard">
+            <div class="txtCard titularCard">
+                Fiesta Grupos
+            </div>
+            <div class="txtCard bodyCard">
+              Os acompañaremos en el diseño de vuestro evento o si preferéis nos encargaremos de organizarlo en su totalidad. Supervisaremos cada detalle con especial cariño, profesionalidad y dedicación
+            </div>    
+            <div class="txtCard flexRowNoWrap  pieCard">
+                <div class="w50">
+                   <hr>
+                </div>
+                <div class="boton">
+                   <button class="button" onclick="document.getElementById('tb4').click();location.href='#carta_menus';"><span>IR GRUPOS</span></button> 
+                </div>                
+            </div>    
+        </article>   
+    </section>
+
+    <section  id="carta_menus" class="w87-5 flexRow mt90">
+        <article class="raya2">
+            <hr>
+        </article>
+        <article>
+            <h1>CARTA DE MENUS&nbsp&nbsp&nbsp&nbsp<i class="fas fa-utensils"></i></h1>
+        </article>
+        <article class="raya2">
+            <hr>
+        </article>    
+    </section>
+    <section class="w87-5 mt90">
+            <div class="tab">
+                <button id="tb1" class="tablinks" onclick="openTab(event, 'Bodas')">Bodas</button>
+                <button id="tb2" class="tablinks" onclick="openTab(event, 'Comuniones')">Comuniones</button>
+                <button id="tb3" class="tablinks" onclick="openTab(event, 'Empresas')">Empresas</button>
+                <button id="tb4" class="tablinks" onclick="openTab(event, 'Fiestas')">Fiesta Grupos</button>
+            </div>
+
+             <div id="Bodas" class="tabcontent">
+                 <pre class="centrado">
+<h2><bold> MENÚ BODA 1   -   101 €</bold></h2> 
+
+<h4>LUNCH: </h4>
+Cinco aperitivos a elejir incluyendo bebida
+
+<h4>Entrantes: </h4>
+Foie " mi cuit" hecho en casa con gelatina de manzana y teja de sésamo 
+Ensalada  de bogavante con vinagreta ligera
+Brick relleno de hongos  con salsa de boletus
+
+<h4>Pescado: </h4>
+Merluza de anzuelo al horno con  crema de marisco 
+
+<h4>Digestivo:</h4>
+Sorbete de limón al cava
+
+<h4>Carne: </h4>
+Solomillo de vaca con milhojas de beicon y patata
+
+<h4>Postre:</h4>
+Degustación de postres de la casa
+
+<h4>Tinto,rosado,cava,agua,sidra…</h4><h4>Café,licores</h4>
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ BODA 2   -   103 €</bold></h2> 
+
+<h4>LUNCH: </h4>
+Cinco aperitivos a elejir incluyendo bebida
+
+<h4>Entrantes: </h4>
+Foie "micuit" hecho en casa con gelatina de manzana y teja de sésamo 
+Ensalada templada de gambas con crema de cítricos  
+Changurro relleno al horno
+
+<h4>Pescado: </h4>
+Lomo de bacalao a la parrilla sobre su pil-pil
+
+<h4>Digestivo:</h4>
+Sorbete de mandarina al txakolí
+
+<h4>Carne: </h4>
+Cabrito asado con reducción de su jugo y lechuga verde
+
+<h4>Postre:</h4>
+Degustación de postres de la casa
+
+<h4>Tinto,rosado,cava,agua,sidra…</h4><h4>Café,licores</h4>
+
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold>MENÚ BODA 3  -  108 €</bold></h2> 
+<h4>LUNCH: </h4>
+Cinco aperitivos a elejir incluyendo bebida
+
+<h4>Entrantes: </h4>
+Foie "mi cuit" hecho en casa con gelatina de manzana y teja de sésamo
+Ensalada templada de vieiras con jugo de carne
+Hojaldre relleno de bacalao con coulis de pimiento rojo
+
+<h4>Pescado: </h4>
+Lomo de rape a la plancha con almejas
+
+<h4>Digestivo:</h4>
+Sorbete de mojito
+
+<h4>Carne: </h4>
+Cochinillo a baja temperatura con puré de patata
+
+<h4>Postre:</h4>
+Degustación de postres de la casa
+
+<h4>Tinto,rosado,cava,agua,sidra…</h4><h4>Café,licores</h4>
+
+I.V.A. incluido
+                </pre>
+            </div>
+
+            <div id="Comuniones" class="tabcontent">
+                <pre class="centrado">
+<h2><bold> MENÚ  BARE-BARE-COMUNIONES   52 €</bold></h2>
+Foie "mi cuit" hecho en casa con gelatina de manzana y teja de sésamo
+
+Croquetas cremosas de jamón ibérico (5 unid.)
+
+Ensalada templada de vieiras con jugo de carne
+
+Merluza asada al horno con crema de marisco
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ  DEGUSTACIÓN-COMUNIONES    -   55 €</bold></h2>
+
+Foie "mi cuit"  hecho en casa con gelatina de manzana y teja de sésamo
+
+Brick relleno de hongos con crema de boletus
+
+Txangurro relleno al horno
+
+Lomo de bacalao a la parrilla sobre su pil-pil
+
+Solomillo con milhojas de beicon y patata
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ ESPECIAL-COMUNIONES    -   58 €</bold></h2>
+Jamón de paleta ibérica de bellota
+
+Ensalada templada de gambas con crema de cítricos
+
+Hojaldre relleno de bacalao con coulis de pimiento rojo
+
+Lomo de rape a la plancha con su refrito
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ INFANTIL-COMUNIONES     -   24 €</bold></h2> 
+Jamón ibérico
+
+Croquetas de jamón ibérico y calamares
+
+½ Solomillo, filete o merluza frita
+
+...
+
+Postre
+
+Bebida
+
+ I.V.A.incluido
+                </pre>
+            </div>
+
+            <div id="Empresas" class="tabcontent">
+                <pre class="centrado">
+<h2><bold> MENÚ  BARE-BARE-EMPRESAS   52 €</bold></h2>
+Foie "mi cuit" hecho en casa con gelatina de manzana y teja de sésamo
+
+Croquetas cremosas de jamón ibérico (5 unid.)
+
+Ensalada templada de vieiras con jugo de carne
+
+Merluza asada al horno con crema de marisco
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ  DEGUSTACIÓN-EMPRESAS   -   55 €</bold></h2>
+
+Foie "mi cuit"  hecho en casa con gelatina de manzana y teja de sésamo
+
+Brick relleno de hongos con crema de boletus
+
+Txangurro relleno al horno
+
+Lomo de bacalao a la parrilla sobre su pil-pil
+
+Solomillo con milhojas de beicon y patata
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ ESPECIAL-EMPRESAS   -   58 €</bold></h2>
+Jamón de paleta ibérica de bellota
+
+Ensalada templada de gambas con crema de cítricos
+
+Hojaldre relleno de bacalao con coulis de pimiento rojo
+
+Lomo de rape a la plancha con su refrito
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido   
+                </pre>
+            </div>
+            <div id="Fiestas" class="tabcontent">
+                <pre class="centrado">
+<h2><bold> MENÚ  BARE-BARE-FIESTAS   52 €</bold></h2>
+Foie "mi cuit" hecho en casa con gelatina de manzana y teja de sésamo
+
+Croquetas cremosas de jamón ibérico (5 unid.)
+
+Ensalada templada de vieiras con jugo de carne
+
+Merluza asada al horno con crema de marisco
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ  DEGUSTACIÓN-FIESTAS   -   55 €</bold></h2>
+
+Foie "mi cuit"  hecho en casa con gelatina de manzana y teja de sésamo
+
+Brick relleno de hongos con crema de boletus
+
+Txangurro relleno al horno
+
+Lomo de bacalao a la parrilla sobre su pil-pil
+
+Solomillo con milhojas de beicon y patata
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido
+
+<hr class="w50">&nbsp;&nbsp;<img src="imagenes/barebare/mancha.png" title="">&nbsp;&nbsp;<hr class="w50">
+<h2><bold> MENÚ ESPECIAL-FIESTAS   -   58 €</bold></h2>
+Jamón de paleta ibérica de bellota
+
+Ensalada templada de gambas con crema de cítricos
+
+Hojaldre relleno de bacalao con coulis de pimiento rojo
+
+Lomo de rape a la plancha con su refrito
+
+Cabrito asado con reduccion de su jugo y lechuga
+
+...
+
+Degustación de postres de la casa
+
+Bebida
+
+Café
+
+ I.V.A. incluido
+                </pre>
+            </div>
+    </section>
+
+    <!-- Pie de página-->   
+    <footer class="mt90">
+        <div class="w87-5 flexRow">
+            <article class="col-5-texto">
+                <ul>
+                    <li><a href="index.html">Inicio</li>
+                    <li><a href="restaurante.html">Restaurante</a>
+                    <li><a href="barra.html">Barra</a></li>
+                </ul>
+            </article>
+            <article class="col-5-texto">
+                <ul>
+                    <li><a href="bodega.html">Bodega</a></li>
+                    <li><a href="eventos.html"> Eventos</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                </ul>                       
+            </article>
+            <article class="col-5-texto">
+                <p><a href="avisolegal.html">Aviso legal</a></p>
+                <p><a href="politicaCookies.html">Pol. cookies y Privacidad</a></p>
+                <p><a href="avisolegal.html">© Bare-Bare 2018</a></p>
+            </article>          
+            <article class="col-5-texto p-25">
+                <p>Siguenos en Facebook</p>
+                <p>Portu Kalea, 7</p>
+                <p>20003 Donostia, Gipuzkoa </p>
+            </article>          
+            <article class="col-5-texto p-50">
+                <p>Horario 10:30 - 24:00H</p>
+                <p>Jueves cerrado</p>
+                <p>+34 943 420 703 </p>
+            </article>                                                
+        </div>
+    </footer>
+    <!--  Carga de imagenes de background utilizadas en css de forma diferida  -->
+    <script src="js/lazyLoading.js"></script>    
+     <!--  Para las pestañas  -->
+    <script>
+        window.onload = function() {
+            document.getElementById('tb1').click();
+        };
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }      
+    </script>        
+</body>
+</html>
